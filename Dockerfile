@@ -26,9 +26,8 @@ COPY . /code/
 # See "schema" field in "./env.ts"
 ENV APP_TITLE=BySubina
 ENV APP_ENVIRONMENT=development
-ENV APP_GRAPHQL_DOMAIN=https://by-subina.com/graphql/
+ENV APP_GRAPHQL_DOMAIN=https://by-subina.com
 ENV APP_SENTRY_DSN=Dummy
-
 
 # NOTE: These are set directly in `vite.config.ts`
 # We're using raw web-app-serve placeholder values here to treat them as dynamic values

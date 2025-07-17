@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - develop
-      - web-app-serve-session-01/subina
 
 permissions:
   packages: write

@@ -1,6 +1,7 @@
 .env
 .vite/
 
+**.env
 # Tooling
 node_modules/
 .eslintcache

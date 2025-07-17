@@ -25,9 +25,10 @@
     # These variables are not included in the build files but the values should still be valid.
     # See "schema" field in "./env.ts"
     ENV APP_TITLE=timur
-    ENV APP_GRAPHQL_DOMAIN=http://localhost:8100/graphql
+    ENV APP_GRAPHQL_DOMAIN=http://localhost:4000/graphql
     ENV APP_ENVIRONMENT=production
-    ENV APP_SENTRY_DSN=hello
+    ENV APP_SENTRY_DSN=https://examplePublicKey@o0.ingest.sentry.io/0
+
     
     # NOTE: WEB_APP_SERVE_ENABLED=true will skip defining the above dynamic env variables
     # See "overrideDefine" field in "./env.ts"

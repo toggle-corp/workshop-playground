@@ -28,7 +28,6 @@ COPY . /code/
 # These variables are not included in the build files but the values should still be valid.
 # See "schema" field in "./env.ts"
 ENV APP_TITLE=Barsha
-ENV APP_GRAPHQL_ENDPOINT=http://127.0.0.1:8000/
 
 # NOTE: These are set directly in `vite.config.ts`
 # We're using raw web-app-serve placeholder values here to treat them as dynamic values
@@ -36,7 +35,7 @@ ENV APP_ANALYTIC_SRC=WEB_APP_SERVE_PLACEHOLDER__APP_ANALYTIC_SRC
 # NOTE: Static env variables:
 # These env variables are used during build
 ENV APP_GRAPHQL_CODEGEN_ENDPOINT=./backend/schema.graphql
-ENV APP_GRAPHQL_DOMAIN=http://barsha.com
+ENV APP_GRAPHQL_DOMAIN=APP_GRAPHQL_ENDPOINT=http://localhost:8000/graphql/
 ENV APP_UMAMI_SRC=http://barsha.com
 ENV APP_UMAMI_ID=123abc
 ENV APP_SENTRY_DSN=http://barsha.com
